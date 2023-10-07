@@ -5,7 +5,7 @@
   To allow client side insert directive in a component add "use client"; above the file.
 ```
 Sample: Hero.tsx
-```
+```javascript
 "use client";
 import React from "react";
 ```
