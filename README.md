@@ -19,9 +19,12 @@ $npx create-next-app@latest ./
 $npm run dev
 ```
 ### Third Party UI library
-```
+```vim
 Headless UI
 https://headlessui.com/
+```
+```
+$npm install @headlessui/react
 ```
 ### Troubleshooting
 ```
