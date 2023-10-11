@@ -27,6 +27,11 @@ https://headlessui.com/
 $npm install @headlessui/react
 ```
 ### Troubleshooting
+app-index.js:31 Warning: Extra attributes from the server: data-new-gr-c-s-check-loaded,data-gr-ext-installed
 ```
-- 
+Disable Grammarly chrome extension and ColorZilla
+```
+screen.js:1 Uncaught TypeError: Cannot read properties of null (reading 'getContext')
+```
+
 ```
