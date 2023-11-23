@@ -28,10 +28,13 @@ $npm install @headlessui/react
 ```
 ### Troubleshooting
 app-index.js:31 Warning: Extra attributes from the server: data-new-gr-c-s-check-loaded,data-gr-ext-installed
-```
+```vim
 Disable Grammarly chrome extension and ColorZilla
 ```
 screen.js:1 Uncaught TypeError: Cannot read properties of null (reading 'getContext')
 ```
-
+```
+Unable to commit NextJs project folder in Github
+```vim
+Manually copy the files and folders to a new folder leaving, hidden files.
 ```
