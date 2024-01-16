@@ -38,3 +38,8 @@ Unable to commit NextJs project folder in Github
 ```vim
 Manually copy the files and folders to a new folder leaving, hidden files.
 ```
+
+### References
+[Nextj.SEO Checklist](https://dminhvu.com/nextjs-seo)
+
+[Next.Js](https://nextjs.org/)
