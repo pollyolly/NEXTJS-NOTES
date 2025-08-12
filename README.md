@@ -42,8 +42,8 @@ http://localhost:3000/api/auth/callback/google
 ### Troubleshooting
 #### Modules not found inside [...nextauth]/route.js, @/app and @/libs
 ```javascript
-# https://github.com/dejwid/food-ordering/blob/master/tsconfig.json
-# Add in tsconfig.json
+// https://github.com/dejwid/food-ordering/blob/master/tsconfig.json
+// Add in tsconfig.json
 "paths":{
     "@/*":["./src/*"]
 },
@@ -58,7 +58,7 @@ fetch('/api/register', {});
 ```
 #### Fix: Monggo Database connection, use 127.0.0.1 not localhost
 ```
-# Project-Folder/.env
+// Project-Folder/.env
 MONGO_URL='mongodb://127.0.0.1:27017/pizza-shop'
 ```
 #### Tailwind Css
@@ -69,12 +69,12 @@ button {
 ```
 #### AppContext (SessionProvider)
 ```javascript
-# AppContext.js (Composition)
+// AppContext.js (Composition)
 export default function AppProvider({children}){
     <SessionProvider>{children}</SessionProvider>   
 }
-# layout.js
-# import { AppProvider } from 'AppContext.js'
+// layout.js
+// import { AppProvider } from 'AppContext.js'
 <AppProvider>
     <main></main>
 </AppProvider>
@@ -82,8 +82,8 @@ export default function AppProvider({children}){
 #### Allow Remote files 
 next.config.mjs
 ```javascript
-# used in: app/profile/page.js
-/** @type {import('next').NextConfig} **/
+// used in: app/profile/page.js
+// @type {import('next').NextConfig}
 const nextConfig = {
     images: {
         remotePatterns: [
@@ -122,8 +122,8 @@ $npm install uniqid
 $npm install react-hot-toast
 ```
 ```javascript
-# layout.js
-# https://medium.com/@morerahul620/react-hot-toast-setup-in-next-js-bbf2b5d91c63
+// layout.js
+// https://medium.com/@morerahul620/react-hot-toast-setup-in-next-js-bbf2b5d91c63
 import { Toaster } from "react-hot-toast";
 
 <Toaster position="top-center" />
