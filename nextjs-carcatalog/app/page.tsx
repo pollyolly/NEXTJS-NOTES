@@ -4,10 +4,9 @@ import { fetchCars }  from "@/utils"
 import { yearsOfProduction, fuels } from "@/constants"
 
 export default async function Home() {
-
-  // const allCars = await fetchCars();
-
+/*
   const allCars = [{
+    id: 1,
     city_mpg: 23,
     class: 'compact car',
     combination_mpg: 24,
@@ -19,9 +18,11 @@ export default async function Home() {
     make: 'toyota',
     model: 'corolla',
     transmission: 'a',
-    year: 1993
+    year: 1993,
+    message: "none"
   },
   {
+    id: 2,
     city_mpg: 23,
     class: 'compact car',
     combination_mpg: 26,
@@ -33,8 +34,11 @@ export default async function Home() {
     make: 'toyota',
     model: 'corolla',
     transmission: 'm',
-    year: 1993
+    year: 1993, 
+    message: "none"
 }]
+*/
+const allCars = await fetchCars();
 
   console.log(allCars); //will log on server side; we are not using "use client"
                         //by default nextjs is "use server";
@@ -66,14 +70,14 @@ export default async function Home() {
             <section>
               <div className="home__cars-wrapper">
               {allCars?.map((car)=> (
-                <CarCard car={car}/>
+                <CarCard car={car} key={car.id}/>
                 ))}
               </div>
             </section>
             ) : (
               <div className="home__error-container">
                 <h2 className="text-black text-xl font-bold">Oops, no results</h2>
-                <p>{allCars?.message}</p>
+                {/* <p>{allCars[0].message}</p> */}
               </div>
             )}
         </div>
