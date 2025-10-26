@@ -96,6 +96,17 @@ const nextConfig = {
 };
 export default nextConfig;
 ```
+or next.config.js
+```javascript
+const nextConfig = {
+    compiler: {
+        removeConsole: false,
+    },
+    images: {
+        domains: ["cdn.imagin.studio"] //Allow the external API url in NextJs for images
+    }
+}
+```
 #### getServerSession not working
 ```vim
 1. NEXTAUTH_SECRET="thisissecrete"
