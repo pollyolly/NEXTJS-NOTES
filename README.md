@@ -1,40 +1,40 @@
 ## NEXTJS NOTES
 
-### NextJs Installation
+#### NextJs Installation
 ```vim
 $npx create-next-app@latest
 ```
-### Run Project
+#### Run Project
 ```vim
 $npm run dev
 ```
-### Next Auth
+#### Next Auth
 ```vim
 $npm install next-auth
 ```
-### Mongoose
+#### Mongoose
 ```vim
 $npm install mongoose
 ```
-### DotEnv (process.env)
+#### DotEnv (process.env)
 ```vim
 $npm install dotenv
 ```
-### Bcrypt
+#### Bcrypt
 ```vim
 $npm install bcrypt
 ```
-### MongodDb Adapter
+#### MongodDb Adapter
 ```vim
 $npm install @auth/mongodb-adapter mongodb
 ```
-### Google Oauth consent screen
+#### Google Oauth consent screen
 ```vim
 1. Google console cloud
 2. Create project
 3. OAuth consent screen
 ```
-### Authorized redirect URI
+#### Authorized redirect URI
 ```vim
 # use domain name in production
 http://localhost:3000/api/auth/callback/google
@@ -161,6 +161,6 @@ Manually copy the files and folders to a new folder leaving, hidden files.
 ```
 
 ### References
-[Nextj.SEO Checklist](https://dminhvu.com/nextjs-seo)
+[Nextjs SEO Checklist](https://dminhvu.com/nextjs-seo)
 
-[Next.Js](https://nextjs.org/)
+[Nextjs Medium](https://medium.com/@johnmark_76235/nextjs-tutorial-086fb7e2c71b)
